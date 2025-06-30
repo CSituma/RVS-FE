@@ -28,7 +28,7 @@ A clean, accessible, and paginated volunteer directory built with **Next.js 15**
 
 ```bash
 git clone https://github.com/CSituma/RVS.git
-cd RVS
+cd RVS-FE
 ```
 
 ## 🧪 Run Tests
@@ -49,7 +49,10 @@ npm run dev
 src/
 │
 ├── app/
-│   └── volunteers/[page]/page.tsx 
+│   └── volunteers/
+│       └── [page]/            
+│           ├── page.tsx         
+│           ├── error.tsx     
      ├── layout.tsx    
      ├── page.tsx 
      ├── global.css      
