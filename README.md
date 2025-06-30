@@ -29,12 +29,7 @@ A clean, accessible, and paginated volunteer directory built with **Next.js 15**
 ```bash
 git clone https://github.com/CSituma/RVS.git
 cd RVS-FE
-```
-
-## 🧪 Run Tests
-
-```bash
-npm run test
+npm install
 ```
 
 ## 🚀 Start Dev Server
@@ -42,6 +37,14 @@ npm run test
 ```bash
 npm run dev
 ````
+
+## 🧪 Run Tests
+
+```bash
+npm run test
+```
+
+
 
 📁 Folder Structure
 
