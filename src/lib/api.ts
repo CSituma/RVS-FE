@@ -16,6 +16,6 @@ export async function getVolunteers(pageNum: number): Promise<Volunteer[]> {
     return data.results;
   } catch (err) {
     console.error("Error fetching volunteers:", err);
-    return [];
+      throw err;
   }
 }

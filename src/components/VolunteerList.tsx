@@ -19,16 +19,15 @@ export default function VolunteerList({ currentPage }: Props) {
           RVS Volunteers List- Page {currentPage}
         </h2>
       </div>
-
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {volunteers.map((volunteer: Volunteer) => (
-          <VolunteerCard
-            key={volunteer.login.uuid}
-            volunteer={volunteer}
-          />
-        ))}
-      </div>
-
+      {volunteers.length === 0 ? (
+        <p className="text-center text-gray-500">No volunteers found.</p>
+      ) : (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {volunteers.map((volunteer: Volunteer) => (
+            <VolunteerCard key={volunteer.login.uuid} volunteer={volunteer} />
+          ))}
+        </div>
+      )}
       <Pagination currentPage={currentPage} />
     </div>
   );
